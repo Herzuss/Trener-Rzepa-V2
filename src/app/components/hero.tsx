@@ -1,0 +1,112 @@
+import Image from "next/image";
+import Link from "next/link";
+
+const items = [
+  "6+ LAT DOŚWIADCZENIA",
+  "CERTYFIKAT EQF3/4",
+  "30+ PODOPIECZNYCH",
+];
+
+const MarqueeBlock = () => (
+  <div className="flex w-max items-center">
+    {items.map((text, idx) => (
+      <div key={idx} className="flex items-center pr-8 sm:pr-10 md:pr-12">
+        <span className="font-anton text-md sm:text-lg md:text-xl tracking-tighter text-zinc-400">
+          {text}
+        </span>
+        <div className="ml-8 sm:ml-10 md:ml-12">
+          <Image
+            src={"/zap.svg"}
+            alt="zap"
+            width={24}
+            height={24}
+            className="w-4 h-4  sm:w-5 sm:h-5 md:w-6 md:h-6"
+          />
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+export default function Hero() {
+  return (
+    <>
+      <section className="w-full py-6">
+        <div className="mx-auto flex w-full max-w-225 overflow-hidden mask-[linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
+          <div className="flex w-max animate-marquee">
+            <MarqueeBlock />
+            <MarqueeBlock />
+            <MarqueeBlock />
+            <MarqueeBlock />
+          </div>
+        </div>
+      </section>
+      <section className="relative flex items-center justify-center mb-28 xs:mb-10">
+        <Image
+          src={"/zdjecie rzepy do sekcji hero.png"}
+          alt="sylwetka rzepy bez tla"
+          priority
+          width={501}
+          height={681}
+          className=" w-2/3 h-auto sm:w-1/3 sm:h-auto mt-8 object-cover mask-[linear-gradient(to_bottom,white_70%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,white_70%,transparent_100%)] z-10"
+        />
+        <Image
+          src={"/RZEPA.svg"}
+          alt="napis"
+          width={1666}
+          height={120}
+          className="absolute z-0"
+          priority
+        />
+        <Image
+          src={"/RZEPA.svg"}
+          alt="napis"
+          width={1666}
+          height={120}
+          className="absolute z-0 mt-102.5 opacity-40 xs:hidden"
+          priority
+        />
+        <Image
+          src={"/RZEPA.svg"}
+          alt="napis"
+          width={1666}
+          height={120}
+          className="absolute z-0 -mt-102.5 opacity-40 xs:hidden"
+          priority
+        />
+        <div className="w-80 h-96 absolute bg-[radial-gradient(circle,#328C97_74%,#53EAFD80_89%)] blur-[100px] opacity-5 md:opacity-20"></div>
+        <h1 className="font-anton text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl tracking-tight uppercase absolute text-zinc-50 text-stroke-1 text-stroke-zinc-950 z-10 text-shadow-lg/50 text-shadow-zinc-950 -mt-20 sm:-mt-28 md:-mt-48 xl:-mt-56 ">
+          Twoja droga do <span className="text-yellow-200">formy</span> życia
+        </h1>
+        <h2 className="font-semibold text-center text-zinc-200 text-sm md:text-lg lg:text-xl xl:text-2xl absolute z-10 text-shadow-zinc-950 text-shadow-lg mt-5 md:-mt-10 md:leading-10">
+          Sprawdzone metody, zero lania wody i konkretne wyniki. <br />
+          Dołącz do ekipy, która zamienia wymówki na życiową formę
+        </h2>
+        <Link href="/" className="absolute z-10 mt-40">
+          <button className="bg-yellow-300 group relative inline-flex w-48 h-12 sm:w-56 sm:h-16 items-center justify-center overflow-hidden rounded-md font-extrabold uppercase  text-2xl sm:text-3xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_30px_0] shadow-zinc-500 text-zinc-950 border-2 border-yellow-200">
+            Przemiana
+            <div className="w-0 translate-x-full pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+              >
+                <path
+                  d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                  fill="currentColor"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  stroke="currentColor"
+                  strokeWidth="0.8"
+                ></path>
+              </svg>
+            </div>
+          </button>
+        </Link>
+      </section>
+    </>
+  );
+}
