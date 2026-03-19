@@ -53,12 +53,96 @@ export default function Przemiany() {
             </div>
           </div>
         </div>
-        <div className="border border-zinc-800 bg-zinc-900 rounded-3xl"></div>
+        <div className="border border-zinc-800 bg-zinc-900 rounded-3xl flex flex-col">
+          <Image
+            src={"/przemiana%201.png"}
+            alt="zdjecie przemiany"
+            width={519}
+            height={381}
+            className="w-full h-auto object-cover"
+          />
+          <div className="flex flex-row justify-between px-4 py-4">
+            <div className="flex flex-col items-center justify-center">
+              <p className="font-semibold text-lg text-zinc-100">Czas</p>
+              <p className="font-anton uppercase text-zinc-100 text-2xl">
+                4 miesiące
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <p className="font-semibold text-lg text-zinc-100">Waga</p>
+              <p className="font-anton uppercase text-yellow-200 text-2xl">
+                -10kg
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <p className="font-semibold text-lg text-zinc-100">Cel</p>
+              <p className="font-anton uppercase text-zinc-100 text-2xl">
+                Redukcja
+              </p>
+            </div>
+          </div>
+        </div>
         {/* po tym momencie dopiero jak pokazWszystkie jest ustawiony na true sie pokaza  */}
         {pokazWszystkie && (
           <>
-            <div className="border border-zinc-800 bg-zinc-900 rounded-3xl"></div>
-            <div className="border border-zinc-800 bg-zinc-900 rounded-3xl"></div>
+            <div className="border border-zinc-800 bg-zinc-900 rounded-3xl flex flex-col">
+              <Image
+                src={"/przemiana%201.png"}
+                alt="zdjecie przemiany"
+                width={519}
+                height={381}
+                className="w-full h-auto object-cover"
+              />
+              <div className="flex flex-row justify-between px-4 py-4">
+                <div className="flex flex-col items-center justify-center">
+                  <p className="font-semibold text-lg text-zinc-100">Czas</p>
+                  <p className="font-anton uppercase text-zinc-100 text-2xl">
+                    4 miesiące
+                  </p>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <p className="font-semibold text-lg text-zinc-100">Waga</p>
+                  <p className="font-anton uppercase text-yellow-200 text-2xl">
+                    -10kg
+                  </p>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <p className="font-semibold text-lg text-zinc-100">Cel</p>
+                  <p className="font-anton uppercase text-zinc-100 text-2xl">
+                    Redukcja
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="border border-zinc-800 bg-zinc-900 rounded-3xl flex flex-col">
+              <Image
+                src={"/przemiana%201.png"}
+                alt="zdjecie przemiany"
+                width={519}
+                height={381}
+                className="w-full h-auto object-cover"
+              />
+              <div className="flex flex-row justify-between px-4 py-4">
+                <div className="flex flex-col items-center justify-center">
+                  <p className="font-semibold text-lg text-zinc-100">Czas</p>
+                  <p className="font-anton uppercase text-zinc-100 text-2xl">
+                    4 miesiące
+                  </p>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <p className="font-semibold text-lg text-zinc-100">Waga</p>
+                  <p className="font-anton uppercase text-yellow-200 text-2xl">
+                    -10kg
+                  </p>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <p className="font-semibold text-lg text-zinc-100">Cel</p>
+                  <p className="font-anton uppercase text-zinc-100 text-2xl">
+                    Redukcja
+                  </p>
+                </div>
+              </div>
+            </div>
           </>
         )}
       </div>

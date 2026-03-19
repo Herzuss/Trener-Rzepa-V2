@@ -81,8 +81,9 @@ export default function Omnie() {
           <Image
             src={"/podpis.svg"}
             alt="podpis"
-            height={278}
+            height={279}
             width={255}
+            unoptimized={true}
             className="self-center pt-10 mt-auto"
           />
         </div>

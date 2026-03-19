@@ -51,26 +51,29 @@ export default function Hero() {
           className=" w-2/3 h-auto sm:w-1/3 sm:h-auto mt-8 object-cover mask-[linear-gradient(to_bottom,white_70%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,white_70%,transparent_100%)] z-10"
         />
         <Image
-          src={"/RZEPA.svg"}
+          src={"/RZEPA1.svg"}
           alt="napis"
           width={1666}
           height={120}
+          unoptimized={true}
           className="absolute z-0"
           priority
         />
         <Image
-          src={"/RZEPA.svg"}
+          src={"/RZEPA1.svg"}
           alt="napis"
           width={1666}
           height={120}
+          unoptimized={true}
           className="absolute z-0 mt-102.5 opacity-40 xs:hidden"
           priority
         />
         <Image
-          src={"/RZEPA.svg"}
+          src={"/RZEPA1.svg"}
           alt="napis"
           width={1666}
           height={120}
+          unoptimized={true}
           className="absolute z-0 -mt-102.5 opacity-40 xs:hidden"
           priority
         />
