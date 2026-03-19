@@ -79,12 +79,12 @@ export default function Omnie() {
             doświadczeniach.
           </p>
           <Image
-            src={"/podpis.svg"}
+            src={"/podpisrzepy.svg"}
             alt="podpis"
             height={279}
             width={255}
             unoptimized={true}
-            className="self-center pt-10 mt-auto"
+            className="self-center pt-10 mt-auto drop-shadow-[0_0_15px_rgba(250,204,21,0.6)]"
           />
         </div>
       </div>

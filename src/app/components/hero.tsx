@@ -48,45 +48,46 @@ export default function Hero() {
           priority
           width={501}
           height={681}
-          className=" w-2/3 h-auto sm:w-1/3 sm:h-auto mt-8 object-cover mask-[linear-gradient(to_bottom,white_70%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,white_70%,transparent_100%)] z-10"
+          className=" w-2/3 h-auto sm:w-1/3 sm:h-auto mt-5 object-cover mask-[linear-gradient(to_bottom,white_70%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,white_70%,transparent_100%)] z-10"
         />
         <Image
-          src={"/RZEPA1.svg"}
+          src={"/RZEPA.svg"}
           alt="napis"
           width={1666}
           height={120}
           unoptimized={true}
-          className="absolute z-0"
+          className="absolute z-0 opacity-80 xs:opacity-60 blur-[1px] xs:blur-[2px]"
           priority
         />
         <Image
-          src={"/RZEPA1.svg"}
+          src={"/RZEPA.svg"}
           alt="napis"
           width={1666}
           height={120}
           unoptimized={true}
-          className="absolute z-0 mt-102.5 opacity-40 xs:hidden"
+          className="absolute z-0 mt-102.5 opacity-50 blur-[1px] xs:blur-[2px] xs:hidden"
           priority
         />
         <Image
-          src={"/RZEPA1.svg"}
+          src={"/RZEPA.svg"}
           alt="napis"
           width={1666}
           height={120}
           unoptimized={true}
-          className="absolute z-0 -mt-102.5 opacity-40 xs:hidden"
+          className="absolute z-0 -mt-102.5 opacity-50 blur-[1px] xs:blur-[2px] xs:hidden"
           priority
         />
         <div className="w-80 h-96 absolute bg-[radial-gradient(circle,#328C97_74%,#53EAFD80_89%)] blur-[100px] opacity-5 md:opacity-20"></div>
-        <h1 className="font-anton text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl tracking-tight uppercase absolute text-zinc-50 text-stroke-1 text-stroke-zinc-950 z-10 text-shadow-lg/50 text-shadow-zinc-950 -mt-20 sm:-mt-28 md:-mt-48 xl:-mt-56 ">
+        <h1 className="font-anton text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl tracking-tight uppercase absolute text-zinc-50 text-stroke-1 text-stroke-zinc-950 z-10 text-shadow-lg/50 text-shadow-zinc-950 -mt-11 md:-mt-48 xl:-mt-56 ">
           Twoja droga do <span className="text-yellow-200">formy</span> życia
         </h1>
-        <h2 className="font-semibold text-center text-zinc-200 text-sm md:text-lg lg:text-xl xl:text-2xl absolute z-10 text-shadow-zinc-950 text-shadow-lg mt-5 md:-mt-10 md:leading-10">
-          Sprawdzone metody, zero lania wody i konkretne wyniki. <br />
+        <h2 className="font-semibold text-center text-zinc-200 text-sm md:text-lg lg:text-xl xl:text-2xl absolute z-10 text-shadow-zinc-950 text-shadow-lg mt-20 md:-mt-10 md:leading-10">
+          Sprawdzone metody, zero lania wody i konkretne wyniki.{" "}
+          <br className="hidden sm:block" />
           Dołącz do ekipy, która zamienia wymówki na życiową formę
         </h2>
-        <Link href="/" className="absolute z-10 mt-40">
-          <button className="bg-yellow-300 group relative inline-flex w-48 h-12 sm:w-56 sm:h-16 items-center justify-center overflow-hidden rounded-md font-extrabold uppercase  text-2xl sm:text-3xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_30px_0] shadow-zinc-500 text-zinc-950 border-2 border-yellow-200">
+        <Link href="/" className="absolute z-10 mt-72">
+          <button className="bg-yellow-300 group relative inline-flex w-48 h-12 sm:w-56 sm:h-16 items-center justify-center overflow-hidden rounded-md font-bold md:font-extrabold uppercase  text-2xl sm:text-3xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_30px_0] shadow-zinc-500 text-zinc-950 border-2 border-yellow-200">
             Przemiana
             <div className="w-0 translate-x-full pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
               <svg
