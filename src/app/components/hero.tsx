@@ -41,7 +41,7 @@ export default function Hero() {
           </div>
         </div>
       </section>
-      <section className="relative flex items-center justify-center mb-28 xs:mb-10">
+      <section className="relative flex items-center justify-center mb-10 xs:mb-10">
         <Image
           src={"/zdjecie rzepy do sekcji hero.png"}
           alt="sylwetka rzepy bez tla"
@@ -56,7 +56,7 @@ export default function Hero() {
           width={1666}
           height={120}
           unoptimized={true}
-          className="absolute z-0 opacity-80 xs:opacity-60 blur-[1px] xs:blur-[2px]"
+          className="absolute z-0 opacity-80 xs:opacity-60 blur-[1px] xs:blur-[2px] mt-66 xs:mt-0"
           priority
         />
         <Image
@@ -65,29 +65,21 @@ export default function Hero() {
           width={1666}
           height={120}
           unoptimized={true}
-          className="absolute z-0 mt-102.5 opacity-50 blur-[1px] xs:blur-[2px] xs:hidden"
+          className="absolute z-0 -mt-40 opacity-80
+           blur-[1px] xs:blur-[2px] xs:hidden"
           priority
         />
-        <Image
-          src={"/RZEPA.svg"}
-          alt="napis"
-          width={1666}
-          height={120}
-          unoptimized={true}
-          className="absolute z-0 -mt-102.5 opacity-50 blur-[1px] xs:blur-[2px] xs:hidden"
-          priority
-        />
-        <div className="w-80 h-96 absolute bg-[radial-gradient(circle,#328C97_74%,#53EAFD80_89%)] blur-[100px] opacity-5 md:opacity-20"></div>
-        <h1 className="font-anton text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl tracking-tight uppercase absolute text-zinc-50 text-stroke-1 text-stroke-zinc-950 z-10 text-shadow-lg/50 text-shadow-zinc-950 -mt-11 md:-mt-48 xl:-mt-56 ">
+        <div className="w-40 h-48 md:w-80 md:h-96 absolute bg-[radial-gradient(circle,#328C97_74%,#53EAFD80_89%)] blur-[100px] opacity-5 md:opacity-20"></div>
+        <h1 className="font-anton text-6xl lg:text-7xl xl:text-8xl tracking-tight uppercase absolute text-zinc-50 text-stroke-0 sm:text-stroke-1 text-stroke-zinc-950 z-10 text-shadow-lg/50 text-shadow-zinc-950 -mt-10 md:-mt-48 xl:-mt-56 text-center leading-18">
           Twoja droga do <span className="text-yellow-200">formy</span> życia
         </h1>
-        <h2 className="font-semibold text-center text-zinc-200 text-sm md:text-lg lg:text-xl xl:text-2xl absolute z-10 text-shadow-zinc-950 text-shadow-lg mt-20 md:-mt-10 md:leading-10">
+        <h2 className="font-semibold text-center text-zinc-200 text-sm md:text-lg lg:text-xl xl:text-2xl absolute z-10 text-shadow-zinc-950 text-shadow-lg mt-40 md:-mt-10 md:leading-10">
           Sprawdzone metody, zero lania wody i konkretne wyniki.{" "}
           <br className="hidden sm:block" />
           Dołącz do ekipy, która zamienia wymówki na życiową formę
         </h2>
-        <Link href="/" className="absolute z-10 mt-72">
-          <button className="bg-yellow-300 group relative inline-flex w-48 h-12 sm:w-56 sm:h-16 items-center justify-center overflow-hidden rounded-md font-bold md:font-extrabold uppercase  text-2xl sm:text-3xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_30px_0] shadow-zinc-500 text-zinc-950 border-2 border-yellow-200">
+        <Link href="/" className="absolute z-10 mt-75">
+          <button className="bg-yellow-300 group relative inline-flex w-48 h-12 sm:w-56 sm:h-16 items-center justify-center overflow-hidden rounded-md font-semibold xl:font-extrabold uppercase  text-2xl sm:text-3xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_20px_0]  md:shadow-[0_4px_30px_0] shadow-zinc-600 md:shadow-zinc-500 text-zinc-950 border-2 border-yellow-200">
             Przemiana
             <div className="w-0 translate-x-full pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
               <svg

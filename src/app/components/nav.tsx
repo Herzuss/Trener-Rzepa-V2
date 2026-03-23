@@ -74,7 +74,7 @@ export default function Nav() {
           <Link
             href="/"
             onClick={handleCloseMenu}
-            className="bg-yellow-300 group relative inline-flex w-44 h-12 items-center justify-center overflow-hidden rounded-md font-extrabold uppercase text-2xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_30px_0] shadow-zinc-500/60 text-zinc-950 border-2 border-yellow-200"
+            className="bg-yellow-300 group relative inline-flex w-44 h-12 items-center justify-center overflow-hidden rounded-md font-semibold xl:font-extrabold  uppercase text-2xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_30px_0] shadow-zinc-500/60 text-zinc-950 border-2 border-yellow-200"
           >
             Przemiana
             <div className="w-0 translate-x-full pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">

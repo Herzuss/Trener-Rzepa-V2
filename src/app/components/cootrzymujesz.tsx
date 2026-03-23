@@ -15,7 +15,7 @@ export default function Cooferuje() {
           <p className="text-zinc-100 text-xs font-bold tracking-wider mb-5 text-center md:text-left">
             // CO OTRZYMUJESZ?
           </p>
-          <h2 className="font-anton uppercase text-3xl sm:text-4xl md:text-5xl tracking-tighter text-zinc-100 mb-5 text-center md:text-left">
+          <h2 className="font-anton uppercase text-4xl md:text-5xl tracking-tighter text-zinc-100 mb-5 text-center md:text-left">
             kompletny <span className="text-yellow-200">system</span>, nie tylko
             rozpiska
           </h2>

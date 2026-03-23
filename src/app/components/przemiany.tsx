@@ -8,12 +8,12 @@ export default function Przemiany() {
   const [pokazWszystkie, setPokazWszystkie] = useState(false);
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-24">
+    <section className="mx-auto max-w-7xl px-4 py-24 ml-0 mr-0 md:ml-24 md:mr-24">
       <div className="mb-10 text-center md:text-left">
         <p className="text-zinc-100 text-xs font-bold tracking-wider uppercase mb-2">
           // dowód skuteczności
         </p>
-        <h2 className="font-anton uppercase text-3xl sm:text-4xl md:text-5xl tracking-tighter text-zinc-100">
+        <h2 className="font-anton uppercase text-4xl md:text-5xl tracking-tighter text-zinc-100">
           Efekty <span className="text-yellow-200">współpracy</span>
         </h2>
         <p className="font-medium text-zinc-400 tracking-normal text-sm md:text-base text-center md:text-left mt-5">
@@ -22,7 +22,7 @@ export default function Przemiany() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 sm:mr-10 sm:ml-10">
         {/* divy ktore zawsze sa widoczne */}
         <div className="border border-zinc-800 bg-zinc-900 rounded-3xl flex flex-col">
           <Image
