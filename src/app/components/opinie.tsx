@@ -3,15 +3,16 @@ import Image from "next/image";
 export default function Opinie() {
   return (
     <section className="relative w-full overflow-hidden bg-zinc-950 py-20 flex flex-col gap-6">
+      <div className="pointer-events-none absolute -bottom-[20%] -right-[10%] z-0 rounded-full h-100 w-100 blur-[60px] md:h-200 md:w-200 md:blur-[120px] bg-[radial-gradient(circle,rgba(254,240,138,0.25)_0%,transparent_70%)]"></div>
       <div className="flex w-max animate-scroll-left">
         <div className="flex gap-6 pr-6">
           <div className="w-96 h-64 bg-zinc-900/40 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between shrink-0">
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
               <p className="text-zinc-300 text-sm">
-                No to ogólnie plan mega fajny kompatybilny z tym co mam na
+                "No to ogólnie plan mega fajny kompatybilny z tym co mam na
                 swojej siłowni, ćwiczenia fajnie dobrane bez męczenia danej
-                parti przez cały trening ogólnie bardzo fajnie polecam 💯💯{" "}
+                parti przez cały trening ogólnie bardzo fajnie polecam 💯💯"
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -32,9 +33,9 @@ export default function Opinie() {
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
               <p className="text-zinc-300 text-sm">
-                Siemka! <br /> Dzięki za mega treningi i fajny plan treningowy
+                "Siemka! <br /> Dzięki za mega treningi i fajny plan treningowy
                 <br />
-                Ps Już pierwsze postępy są 😉
+                Ps Już pierwsze postępy są 😉"
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -55,10 +56,10 @@ export default function Opinie() {
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
               <p className="text-zinc-300 text-sm">
-                Siemanko, ćwiczy mi się na tym planie naprawdę dobrze, najlepszy
-                plan jaki miałem. Wszystko jest dobrze wytłumaczone, a filmiki,
-                które mi dałeś, bardzo mi pomogły. Na każdym treningu czuję taką
-                pompę jak nigdy
+                "Siemanko, ćwiczy mi się na tym planie naprawdę dobrze,
+                najlepszy plan jaki miałem. Wszystko jest dobrze wytłumaczone, a
+                filmiki, które mi dałeś, bardzo mi pomogły. Na każdym treningu
+                czuję taką pompę jak nigdy"
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -106,9 +107,9 @@ export default function Opinie() {
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
               <p className="text-zinc-300 text-sm">
-                No to ogólnie plan mega fajny kompatybilny z tym co mam na
+                "No to ogólnie plan mega fajny kompatybilny z tym co mam na
                 swojej siłowni, ćwiczenia fajnie dobrane bez męczenia danej
-                parti przez cały trening ogólnie bardzo fajnie polecam 💯💯{" "}
+                parti przez cały trening ogólnie bardzo fajnie polecam 💯💯"
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -129,9 +130,9 @@ export default function Opinie() {
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
               <p className="text-zinc-300 text-sm">
-                Siemka! <br /> Dzięki za mega treningi i fajny plan treningowy
+                "Siemka! <br /> Dzięki za mega treningi i fajny plan treningowy
                 <br />
-                Ps Już pierwsze postępy są 😉
+                Ps Już pierwsze postępy są 😉"
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -153,10 +154,10 @@ export default function Opinie() {
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
               <p className="text-zinc-300 text-sm">
                 {" "}
-                Siemanko, ćwiczy mi się na tym planie naprawdę dobrze, najlepszy
-                plan jaki miałem. Wszystko jest dobrze wytłumaczone, a filmiki,
-                które mi dałeś, bardzo mi pomogły. Na każdym treningu czuję taką
-                pompę jak nigdy
+                "Siemanko, ćwiczy mi się na tym planie naprawdę dobrze,
+                najlepszy plan jaki miałem. Wszystko jest dobrze wytłumaczone, a
+                filmiki, które mi dałeś, bardzo mi pomogły. Na każdym treningu
+                czuję taką pompę jak nigdy"
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -199,58 +200,102 @@ export default function Opinie() {
           </div>
         </div>
       </div>
-
       <div className="flex w-max animate-scroll-right">
         <div className="flex gap-6 pr-6">
           <div className="w-96 h-64 bg-zinc-900/40 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between shrink-0">
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
-              <p className="text-zinc-300 text-sm">Opinia 1 na dole</p>
+              <p className="text-zinc-300 text-sm">
+                "Serio, trenuje mi się dobrze! Progres jest, ciężar większy.
+                Sylwetkowo też jest klasa. Tak jak mówiłeś białeczko uzupełniam
+                każdego dnia, trzymam lekką nadwyżkę kaloryczną i ważę już 80kg
+                (a zaczynałem z 72-73kg)!"
+              </p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-zinc-700"></div>
+              <Image
+                src={"/opinia5avatar.jpg"}
+                alt="opinia 5 avatar"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <div className="text-xs text-zinc-400">
-                <p className="text-zinc-100 font-bold">Anna Nowak</p>
-                <p>Klientka</p>
+                <p className="text-zinc-100 font-bold">Jakub *****</p>
+                <p>Plan treningowy</p>
               </div>
             </div>
           </div>
           <div className="w-96 h-64 bg-zinc-900/40 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between shrink-0">
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
-              <p className="text-zinc-300 text-sm">Opinia 2 na dole</p>
+              <p className="text-zinc-300 text-sm">
+                "Szczerze mówiąc super, ogólnie bardzo fajne ćwiczenia. Po
+                prostu dobrze się ćwiczy tym planem! W poprzednim po chwili
+                miałem coś takiego, że nie chciało mi się robić tych ćwiczeń, a
+                tu sprawia mi to czystą przyjemność."
+              </p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-zinc-700"></div>
+              <Image
+                src={"/opinia6avatar.jpg"}
+                alt="opinia 6 avatar"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <div className="text-xs text-zinc-400">
-                <p className="text-zinc-100 font-bold">Anna Nowak</p>
-                <p>Klientka</p>
+                <p className="text-zinc-100 font-bold">Fabian Ogrodnik</p>
+                <p>Plan treningowy</p>
               </div>
             </div>
           </div>
           <div className="w-96 h-64 bg-zinc-900/40 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between shrink-0">
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
-              <p className="text-zinc-300 text-sm">Opinia 3 na dole</p>
+              <p className="text-zinc-300 text-sm">
+                "Siema! Mega duży progres! Mam strasznie dużo siły, co było nie
+                do pomyślenia kilka miesięcy temu. Bardzo miło i przyjemnie
+                trenuje mi się z planem widzę coraz lepsze wyniki i progres
+                sylwetkowy."
+              </p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-zinc-700"></div>
+              <Image
+                src={"/opinia1avatar.jpg"}
+                alt="avatar osoby"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <div className="text-xs text-zinc-400">
-                <p className="text-zinc-100 font-bold">Anna Nowak</p>
-                <p>Klientka</p>
+                <p className="text-zinc-100 font-bold">Mateusz Kaczmarek</p>
+                <p>Plan treningowy</p>
               </div>
             </div>
           </div>
           <div className="w-96 h-64 bg-zinc-900/40 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between shrink-0">
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
-              <p className="text-zinc-300 text-sm">Opinia 4 na dole</p>
+              <p className="text-zinc-300 text-sm">
+                "Cześć! Dzięki za ten plan. Najlepszy, jaki miałam! Filmiki
+                instruktarzowe mega ułatwiły technikę w końcu robię ćwiczenia
+                poprawnie i bezpiecznie. Po miesiącu już widzę różnicę w
+                sylwetce! Dzięki za motywację i stały kontakt 🫡 Cieszę się, że
+                do Ciebie trafiłam."
+              </p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-zinc-700"></div>
+              <Image
+                src={"/opinia1avatar.jpg"}
+                alt="avatar osoby"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <div className="text-xs text-zinc-400">
-                <p className="text-zinc-100 font-bold">Anna Nowak</p>
-                <p>Klientka</p>
+                <p className="text-zinc-100 font-bold">Dominika Schulz</p>
+                <p>Plan treningowy</p>
               </div>
             </div>
           </div>
@@ -260,52 +305,98 @@ export default function Opinie() {
           <div className="w-96 h-64 bg-zinc-900/40 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between shrink-0">
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
-              <p className="text-zinc-300 text-sm">Opinia 1 na dole</p>
+              <p className="text-zinc-300 text-sm">
+                {" "}
+                "Serio, trenuje mi się dobrze! Progres jest, ciężar większy.
+                Sylwetkowo też jest klasa. Tak jak mówiłeś białeczko uzupełniam
+                każdego dnia, trzymam lekką nadwyżkę kaloryczną i ważę już 80kg
+                (a zaczynałem z 72-73kg)!"
+              </p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-zinc-700"></div>
+              <Image
+                src={"/opinia5avatar.jpg"}
+                alt="opinia 5 avatar"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <div className="text-xs text-zinc-400">
-                <p className="text-zinc-100 font-bold">Anna Nowak</p>
-                <p>Klientka</p>
+                <p className="text-zinc-100 font-bold">Jakub *****</p>
+                <p>Plan treningowy</p>
               </div>
             </div>
           </div>
           <div className="w-96 h-64 bg-zinc-900/40 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between shrink-0">
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
-              <p className="text-zinc-300 text-sm">Opinia 2 na dole</p>
+              <p className="text-zinc-300 text-sm">
+                "Szczerze mówiąc super, ogólnie bardzo fajne ćwiczenia. Po
+                prostu dobrze się ćwiczy tym planem! W poprzednim po chwili
+                miałem coś takiego, że nie chciało mi się robić tych ćwiczeń, a
+                tu sprawia mi to czystą przyjemność."
+              </p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-zinc-700"></div>
+              <Image
+                src={"/opinia6avatar.jpg"}
+                alt="opinia 6 avatar"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <div className="text-xs text-zinc-400">
-                <p className="text-zinc-100 font-bold">Anna Nowak</p>
-                <p>Klientka</p>
+                <p className="text-zinc-100 font-bold">Fabian Ogrodnik</p>
+                <p>Plan treningowy</p>
               </div>
             </div>
           </div>
           <div className="w-96 h-64 bg-zinc-900/40 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between shrink-0">
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
-              <p className="text-zinc-300 text-sm">Opinia 3 na dole</p>
+              <p className="text-zinc-300 text-sm">
+                "Siema! Mega duży progres! Mam strasznie dużo siły, co było nie
+                do pomyślenia kilka miesięcy temu. Bardzo miło i przyjemnie
+                trenuje mi się z planem widzę coraz lepsze wyniki i progres
+                sylwetkowy."
+              </p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-zinc-700"></div>
+              <Image
+                src={"/opinia1avatar.jpg"}
+                alt="avatar osoby"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <div className="text-xs text-zinc-400">
-                <p className="text-zinc-100 font-bold">Anna Nowak</p>
-                <p>Klientka</p>
+                <p className="text-zinc-100 font-bold">Mateusz Kaczmarek</p>
+                <p>Plan treningowy</p>
               </div>
             </div>
           </div>
           <div className="w-96 h-64 bg-zinc-900/40 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between shrink-0">
             <div>
               <div className="flex gap-1 text-zinc-100 mb-4">★★★★★</div>
-              <p className="text-zinc-300 text-sm">Opinia 4 na dole</p>
+              <p className="text-zinc-300 text-sm">
+                "Cześć! Dzięki za ten plan. Najlepszy, jaki miałam! Filmiki
+                instruktarzowe mega ułatwiły technikę w końcu robię ćwiczenia
+                poprawnie i bezpiecznie. Po miesiącu już widzę różnicę w
+                sylwetce! Dzięki za motywację i stały kontakt 🫡 Cieszę się, że
+                do Ciebie trafiłam."
+              </p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-zinc-700"></div>
+              <Image
+                src={"/opinia1avatar.jpg"}
+                alt="avatar osoby"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <div className="text-xs text-zinc-400">
-                <p className="text-zinc-100 font-bold">Anna Nowak</p>
-                <p>Klientka</p>
+                <p className="text-zinc-100 font-bold">Dominika Schulz</p>
+                <p>Plan treningowy</p>
               </div>
             </div>
           </div>
