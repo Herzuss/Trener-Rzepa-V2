@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Opinie() {
   return (
     <section className="relative w-full overflow-hidden bg-zinc-950 py-20 flex flex-col gap-6">
-      <div className="pointer-events-none absolute -bottom-[20%] -right-[10%] z-0 rounded-full h-100 w-100 blur-[60px] md:h-200 md:w-200 md:blur-[120px] bg-[radial-gradient(circle,rgba(254,240,138,0.25)_0%,transparent_70%)]"></div>
+      <div className="pointer-events-none absolute -bottom-[20%] -right-[10%] z-0 rounded-full h-100 w-100 blur-[60px] md:h-200 md:w-200 md:blur-[120px] bg-[radial-gradient(circle,rgba(254,240,138,0.25)_0%,transparent_70%)] transform-gpu translate-z-0 will-change-transform"></div>
       <div className="flex w-max animate-scroll-left">
         <div className="flex gap-6 pr-6">
           <div className="w-96 h-64 bg-zinc-900/40 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between shrink-0">
