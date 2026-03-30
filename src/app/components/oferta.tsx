@@ -1,4 +1,10 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
 export default function Oferta() {
+  const router = useRouter();
+
   return (
     <section className="mx-auto max-w-7xl px-4 xs:px-8">
       <div className="mb-10 text-center md:text-left">
@@ -14,7 +20,8 @@ export default function Oferta() {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-12 relative justify-center items-stretch mx-auto mt-8">
+      <div className="flex flex-col lg:flex-row gap-12 relative justify-center items-center lg:items-stretch mx-auto mt-8">
+        {/* ======================= KARTA 1 ======================= */}
         <div className="relative border border-yellow-400 bg-zinc-900 shadow-[inset_0px_4px_40px] shadow-yellow-500/10 w-full max-w-[24rem] rounded-2xl flex flex-col p-8">
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-zinc-950 font-bold px-4 py-1.5 rounded-full text-xs tracking-wider uppercase whitespace-nowrap">
             Najczęściej wybierany
@@ -135,11 +142,15 @@ export default function Oferta() {
             </li>
           </ul>
 
-          <button className="mt-auto w-full group relative inline-flex h-14 sm:h-16 items-center justify-center overflow-hidden rounded-xl font-semibold xl:font-extrabold uppercase text-2xl sm:text-3xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_20px_0] md:shadow-[0_4px_30px_0] shadow-yellow-500/20 text-zinc-950 bg-yellow-300 border-2 border-yellow-200 hover:bg-yellow-200 hover:shadow-yellow-500/40">
+          <button
+            onClick={() => router.push("/checkout?kwota=199")}
+            className="mt-auto w-full group relative inline-flex h-14 sm:h-16 items-center justify-center overflow-hidden rounded-xl font-semibold xl:font-extrabold uppercase text-2xl sm:text-3xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_20px_0] md:shadow-[0_4px_30px_0] shadow-yellow-500/20 text-zinc-950 bg-yellow-300 border-2 border-yellow-200 hover:bg-yellow-200 hover:shadow-yellow-500/40"
+          >
             KUP TERAZ
           </button>
         </div>
 
+        {/* ======================= KARTA 2 ======================= */}
         <div className="relative border border-zinc-800 bg-zinc-900/40 shadow-[inset_0px_4px_40px] shadow-zinc-950/80 w-full max-w-[24rem] rounded-2xl flex flex-col p-8">
           <div className="relative justify-center items-center flex flex-col border-b border-zinc-800/80 pb-6">
             <h2 className="font-anton uppercase text-4xl text-zinc-100 mt-4 tracking-tight text-center">
@@ -251,8 +262,11 @@ export default function Oferta() {
             </li>
           </ul>
 
-          <button className="mt-auto w-full group relative inline-flex h-14 sm:h-16 items-center justify-center overflow-hidden rounded-xl font-semibold xl:font-extrabold uppercase text-xl sm:text-2xl transition-all duration-300 cursor-pointer tracking-tighter text-zinc-300 bg-transparent border-2 border-zinc-700 hover:bg-zinc-800 hover:text-white hover:border-zinc-500">
-            Kup Teraz
+          <button
+            onClick={() => router.push("/checkout?kwota=299")}
+            className="mt-auto w-full group relative inline-flex h-14 sm:h-16 items-center justify-center overflow-hidden rounded-xl font-semibold xl:font-extrabold uppercase text-xl sm:text-2xl transition-all duration-300 cursor-pointer tracking-tighter text-zinc-300 bg-transparent border-2 border-zinc-700 hover:bg-zinc-800 hover:text-white hover:border-zinc-500"
+          >
+            kup teraz
           </button>
         </div>
       </div>
