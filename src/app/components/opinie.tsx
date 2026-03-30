@@ -402,6 +402,7 @@ export default function Opinie() {
           </div>
         </div>
       </div>
+      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-32 md:h-48 bg-linear-to-t from-zinc-950 to-transparent z-0"></div>
     </section>
   );
 }

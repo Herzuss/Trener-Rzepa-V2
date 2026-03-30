@@ -4,6 +4,7 @@ import Cooferuje from "./components/cootrzymujesz";
 import Omnie from "./components/omnie";
 import Przemiany from "./components/przemiany";
 import Opinie from "./components/opinie";
+import Oferta from "./components/oferta";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Przemiany></Przemiany>
       <Omnie></Omnie>
       <Opinie></Opinie>
+      <Oferta></Oferta>
     </main>
   );
 }
