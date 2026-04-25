@@ -10,10 +10,8 @@ export default function Cooferuje() {
         sizes="100vw"
         className="object-cover object-center z-0"
         quality={50}
-        unoptimized={true}
+        priority={true}
       />
-      {/* Gradient – rozciągnięty na całą szerokość, wycentrowany */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/gradient sekcja co otrzymujesz.svg"
         alt=""
