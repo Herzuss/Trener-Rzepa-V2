@@ -2,16 +2,24 @@ import Image from "next/image";
 
 export default function Cooferuje() {
   return (
-    <section className="relative w-full bg-[url('/tlo%20do%20sekcji%20co%20otrzymujesz.webp')] bg-cover bg-center py-24">
+    <section className="relative w-full py-24 overflow-hidden">
+      <Image
+        src="/tlo do sekcji co otrzymujesz.webp"
+        alt="Tło sekcji"
+        fill
+        sizes="100vw"
+        className="object-cover object-center z-0"
+        quality={75}
+      />
       {/* Gradient – rozciągnięty na całą szerokość, wycentrowany */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/gradient sekcja co otrzymujesz.svg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+        className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none z-0"
       />
-      <div className="ml-10 mr-10 md:ml-24 md:mr-24">
+      <div className="relative z-10 ml-10 mr-10 md:ml-24 md:mr-24">
         <div className="mb-10">
           <p className="text-zinc-100 text-xs font-bold tracking-wider mb-5 text-center md:text-left">
             // CO OTRZYMUJESZ?
