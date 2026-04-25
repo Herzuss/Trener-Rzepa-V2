@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* Tutaj ewentualnie dodamy później reguły dla obrazków, jeśli będą potrzebne */
+  images: {
+    qualities: [50, 75],
+  },
 };
 
 export default nextConfig;
