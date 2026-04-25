@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Cooferuje() {
   return (
-    <section className="relative w-full bg-[url('/tlo%20do%20sekcji%20co%20otrzymujesz.png')] bg-cover bg-center py-24">
+    <section className="relative w-full bg-[url('/tlo%20do%20sekcji%20co%20otrzymujesz.webp')] bg-cover bg-center py-24">
       {/* Gradient – rozciągnięty na całą szerokość, wycentrowany */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img

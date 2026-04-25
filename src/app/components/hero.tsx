@@ -92,6 +92,8 @@ export default function Hero() {
             fetchPriority="high"
             width={501}
             height={681}
+            sizes="(max-width: 640px) 70vw, 33vw"
+            quality={70}
             className="w-full h-auto object-cover mask-[linear-gradient(to_bottom,white_70%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,white_70%,transparent_100%)]"
           />
         </motion.div>
