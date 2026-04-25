@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function Cooferuje() {
   return (
-    <section className="relative w-full py-24 overflow-hidden">
-      <Image
+    <section className="relative w-full py-24 overflow-hidden bg-[url('/tlo%20do%20sekcji%20co%20otrzymujesz.webp')] bg-cover bg-center">
+      {/* <Image
         src="/tlo do sekcji co otrzymujesz.webp"
         alt="Tło sekcji"
         fill
         sizes="100vw"
         className="object-cover object-center z-0"
-        quality={20}
         priority={true}
-      />
+        quality={50}
+      /> */}
       <img
         src="/gradient sekcja co otrzymujesz.svg"
         alt=""

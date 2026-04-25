@@ -86,14 +86,13 @@ export default function Hero() {
           className="w-2/3 sm:w-1/3 z-10 mt-5"
         >
           <Image
-            src={"/zdjecie rzepy do sekcji hero.png"}
+            src={"/zdjecie rzepy do sekcji hero.webp"}
             alt="sylwetka rzepy bez tla"
             priority
             fetchPriority="high"
             width={501}
             height={681}
             sizes="(max-width: 640px) 70vw, 33vw"
-            quality={75}
             className="w-full h-auto object-cover mask-[linear-gradient(to_bottom,white_70%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,white_70%,transparent_100%)]"
           />
         </motion.div>
