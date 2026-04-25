@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import {
   Elements,
@@ -93,18 +93,22 @@ function Form({ kwota }: { kwota: number }) {
   );
 }
 
-export default function CheckoutWrapper({ kwota }: { kwota: number }) {
+export default function CheckoutWrapper({ kwota, pakiet }: { kwota: number, pakiet: string }) {
   const [clientSecret, setClientSecret] = useState("");
+  const hasFetched = useRef(false);
 
   useEffect(() => {
+    if (hasFetched.current) return;
+    hasFetched.current = true;
+
     fetch("/api/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: kwota * 100 }), // Mnożymy x100 (grosze)
+      body: JSON.stringify({ pakiet }),
     })
       .then((res) => res.json())
       .then((data) => setClientSecret(data.clientSecret));
-  }, [kwota]);
+  }, [pakiet]);
 
   if (!clientSecret)
     return (

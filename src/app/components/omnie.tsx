@@ -7,7 +7,7 @@ export default function Omnie() {
   const [isMuted, setIsMuted] = useState(true);
 
   return (
-    <section className="relative mx-auto max-w-screen-3xl mt-10 bg-[url('/omnie%20tlo.png')] bg-cover bg-center bg-no-repeat px-4 xs:px-0 z-20 ml-8 mr-8 md:ml-20 md:mr-20">
+    <section id="o-mnie" className="relative mx-auto max-w-screen-3xl mt-10 bg-[url('/omnie%20tlo.png')] bg-cover bg-center bg-no-repeat px-4 xs:px-0 z-20 ml-8 mr-8 md:ml-20 md:mr-20">
       <div className="relative flex flex-col-reverse md:flex-row gap-10 sm:gap-20 justify-center items-center">
         <div className="relative flex-none aspect-527/795 w-full max-w-131.75 max-h-198.75 rounded-3xl overflow-hidden border-2 border-zinc-800 bg-zinc-950 z-0 mx-auto md:mx-0">
           <video

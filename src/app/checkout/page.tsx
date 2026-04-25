@@ -8,9 +8,17 @@ import CheckoutWrapper from "@/app/components/CheckoutForm";
 function CheckoutContent() {
   const searchParams = useSearchParams();
 
-  // Zczytujemy kwotę prosto z paska adresu URL. Jeśli brakuje, dajemy 199.
-  const kwotaParam = searchParams.get("kwota");
-  const kwota = kwotaParam ? Number(kwotaParam) : 199;
+  // Pobieramy pakiet z paska adresu (np. ?pakiet=plan). Jeśli brakuje, domyślnie "plan".
+  const pakietParam = searchParams.get("pakiet") || "plan";
+  
+  // Słownik tylko w celach wizualnych na frontendzie
+  const ceny: Record<string, number> = {
+    plan: 199,
+    opieka: 299,
+  };
+  
+  const pakiet = ceny[pakietParam] ? pakietParam : "plan";
+  const kwota = ceny[pakiet];
 
   return (
     <div className="w-full max-w-md mx-auto">
@@ -33,7 +41,7 @@ function CheckoutContent() {
         </p>
       </div>
 
-      <CheckoutWrapper kwota={kwota} />
+      <CheckoutWrapper kwota={kwota} pakiet={pakiet} />
 
       <div className="text-center mt-8">
         <a

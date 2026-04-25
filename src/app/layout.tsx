@@ -1,6 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Manrope, Anton } from "next/font/google";
+import { Manrope, Anton, Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -24,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", geist.variable, "scroll-smooth")}>
       <body
         className={`${manrope.variable} ${anton.variable} bg-zinc-950 antialiased`}
       >

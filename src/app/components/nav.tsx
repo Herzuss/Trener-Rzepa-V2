@@ -45,7 +45,7 @@ export default function Nav() {
               <Link
                 onClick={handleCloseMenu}
                 className="text-xl md:text-base text-zinc-100 font-extrabold tracking-tighter hover:text-yellow-400 transition duration-300"
-                href="/"
+                href="/#przemiany"
               >
                 Efekty
               </Link>
@@ -53,7 +53,7 @@ export default function Nav() {
             <li>
               <Link
                 onClick={handleCloseMenu}
-                href="/"
+                href="/#opinie"
                 className="text-xl md:text-base text-zinc-100 tracking-tighter font-extrabold hover:text-yellow-400 transition duration-300"
               >
                 Opinie
@@ -62,19 +62,19 @@ export default function Nav() {
             <li>
               <Link
                 onClick={handleCloseMenu}
-                href="/"
+                href="/#oferta"
                 className="text-xl md:text-base text-zinc-100 tracking-tighter font-extrabold hover:text-yellow-400 transition duration-300"
               >
-                Kontakt
+                Oferta
               </Link>
             </li>
           </ul>
 
           {/* PRZYCISK CTA (Na desktopie układa się do prawej krawędzi) */}
           <Link
-            href="/"
+            href="/#oferta"
             onClick={handleCloseMenu}
-            className="bg-yellow-300 group relative inline-flex w-44 h-12 items-center justify-center overflow-hidden rounded-md font-semibold xl:font-extrabold  uppercase text-2xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_30px_0] shadow-zinc-500/60 text-zinc-950 border-2 border-yellow-200"
+            className="bg-yellow-300 group relative inline-flex w-44 h-12 items-center justify-center overflow-hidden rounded-md font-semibold xl:font-bold  uppercase text-2xl transition-all duration-300 cursor-pointer tracking-tighter shadow-[0_4px_30px_0] shadow-zinc-500/60 hover:bg-yellow-200 hover:shadow-yellow-500/40 text-zinc-950 border-2 border-yellow-200"
           >
             Przemiana
             <div className="w-0 translate-x-full pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">

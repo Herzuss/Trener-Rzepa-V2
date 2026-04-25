@@ -3,12 +3,13 @@ import Image from "next/image";
 export default function Cooferuje() {
   return (
     <section className="relative w-full bg-[url('/tlo%20do%20sekcji%20co%20otrzymujesz.png')] bg-cover bg-center py-24">
-      <Image
-        src={"/gradient sekcja co otrzymujesz.svg"}
-        alt="gradient w tle"
-        width={1440}
-        height={248}
-        className="absolute"
+      {/* Gradient – rozciągnięty na całą szerokość, wycentrowany */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/gradient sekcja co otrzymujesz.svg"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
       />
       <div className="ml-10 mr-10 md:ml-24 md:mr-24">
         <div className="mb-10">
