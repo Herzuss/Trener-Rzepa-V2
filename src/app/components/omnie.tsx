@@ -21,6 +21,7 @@ export default function Omnie() {
           </video>
           <button
             onClick={() => setIsMuted(!isMuted)}
+            aria-label={isMuted ? "Włącz dźwięk" : "Wyłącz dźwięk"}
             className="absolute bottom-4 right-4 z-10 bg-yellow-400/60 backdrop-blur-md border border-zinc-700/50 text-zinc-100 p-3 rounded-full hover:bg-yellow-200 hover:text-zinc-950 transition-colors"
           >
             {isMuted ? (

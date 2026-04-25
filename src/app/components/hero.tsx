@@ -62,6 +62,7 @@ export default function Hero() {
           unoptimized={true}
           className="absolute z-0 opacity-80 xs:opacity-60 blur-[1px] xs:blur-[2px] mt-66 xs:mt-0"
           priority
+          fetchPriority="high"
         />
         <Image
           src={"/RZEPA.svg"}
@@ -71,6 +72,7 @@ export default function Hero() {
           unoptimized={true}
           className="absolute z-0 -mt-40 opacity-80 blur-[1px] xs:blur-[2px] xs:hidden"
           priority
+          fetchPriority="high"
         />
 
         {/* Glow */}
@@ -87,6 +89,7 @@ export default function Hero() {
             src={"/zdjecie rzepy do sekcji hero.png"}
             alt="sylwetka rzepy bez tla"
             priority
+            fetchPriority="high"
             width={501}
             height={681}
             className="w-full h-auto object-cover mask-[linear-gradient(to_bottom,white_70%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,white_70%,transparent_100%)]"

@@ -16,9 +16,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-12 md:gap-60 xl:gap-100 mb-10 w-full">
           {/* Kolumna 1: Menu */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <h4 className="text-zinc-100 font-bold uppercase tracking-wider text-sm mb-5">
+            <h3 className="text-zinc-100 font-bold uppercase tracking-wider text-sm mb-5">
               Menu
-            </h4>
+            </h3>
             <ul className="flex flex-col gap-3">
               <li>
                 <Link
@@ -57,9 +57,9 @@ export default function Footer() {
 
           {/* Kolumna 2: Informacje */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <h4 className="text-zinc-100 font-bold uppercase tracking-wider text-sm mb-5">
+            <h3 className="text-zinc-100 font-bold uppercase tracking-wider text-sm mb-5">
               Informacje
-            </h4>
+            </h3>
             <ul className="flex flex-col gap-3">
               <li>
                 <Link
@@ -74,14 +74,15 @@ export default function Footer() {
 
           {/* Kolumna 3: Social Media */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <h4 className="text-zinc-100 font-bold uppercase tracking-wider text-sm mb-5">
+            <h3 className="text-zinc-100 font-bold uppercase tracking-wider text-sm mb-5">
               Social Media
-            </h4>
+            </h3>
             <div className="flex gap-4">
               <a
                 href="https://instagram.com/kuba.rz"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
                 className="h-10 w-10 bg-zinc-900 rounded-full flex items-center justify-center border border-zinc-800 hover:border-yellow-400 text-zinc-400 hover:text-yellow-400 transition-all duration-300"
               >
                 <svg
@@ -101,6 +102,7 @@ export default function Footer() {
                 href="https://www.tiktok.com/@rzepa068"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="TikTok"
                 className="h-10 w-10 bg-zinc-900 rounded-full flex items-center justify-center border border-zinc-800 hover:border-yellow-400 text-zinc-400 hover:text-yellow-400 transition-all duration-300"
               >
                 <svg
