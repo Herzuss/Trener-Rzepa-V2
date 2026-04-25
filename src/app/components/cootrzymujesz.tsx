@@ -9,7 +9,7 @@ export default function Cooferuje() {
         fill
         sizes="100vw"
         className="object-cover object-center z-0"
-        quality={50}
+        quality={20}
         priority={true}
       />
       <img
