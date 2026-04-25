@@ -10,6 +10,7 @@ export default function Cooferuje() {
         sizes="100vw"
         className="object-cover object-center z-0"
         quality={50}
+        unoptimized={true}
       />
       {/* Gradient – rozciągnięty na całą szerokość, wycentrowany */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
