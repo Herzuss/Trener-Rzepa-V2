@@ -74,16 +74,16 @@ export default function Przemiany() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Karty zawsze widoczne */}
         <PrzemyanaCard
+          src="/przemiana4.png"
+              czas="3 miesiące"
+              waga="-5kg"
+              cel="Redukcja"
+        />
+        <PrzemyanaCard
           src="/przemiana1.png"
           czas="4 miesiące"
           waga="-10kg"
           cel="Redukcja"
-        />
-        <PrzemyanaCard
-          src="/przemiana3.png"
-          czas="6 miesięcy"
-          waga="+7kg"
-          cel="Masa"
         />
 
         {/* Karty widoczne po kliknięciu "Pokaż więcej" */}
@@ -96,10 +96,10 @@ export default function Przemiany() {
               cel="Masa"
             />
             <PrzemyanaCard
-              src="/przemiana4.png"
-              czas="3 miesiące"
-              waga="-5kg"
-              cel="Redukcja"
+              src="/przemiana3.png"
+          czas="6 miesięcy"
+          waga="+7kg"
+          cel="Masa"
             />
           </>
         )}

@@ -67,7 +67,7 @@ export default function FAQ() {
               </span>
             </button>
             <div
-              className={`px-16 pb-6 text-zinc-300 text-base transition-all duration-300 overflow-hidden ${
+              className={`px-16 pb-6 text-zinc-300 text-sm md:text-base transition-all duration-300 overflow-hidden ${
                 openIndex === idx ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
