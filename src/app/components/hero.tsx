@@ -78,13 +78,8 @@ export default function Hero() {
         {/* Glow */}
         <div className="w-40 h-48 md:w-80 md:h-96 absolute bg-[radial-gradient(circle,#328C97_74%,#53EAFD80_89%)] blur-[100px] opacity-5 md:opacity-20"></div>
 
-        {/* Zdjęcie trenera – wjeżdża z dołu */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="w-2/3 sm:w-1/3 z-10 mt-5"
-        >
+        {/* Zdjęcie trenera – wjeżdża z dołu (czysty CSS) */}
+        <div className="w-2/3 sm:w-1/3 z-10 mt-5 animate-fade-in-up">
           <Image
             src={"/zdjecie rzepy do sekcji hero.webp"}
             alt="sylwetka rzepy bez tla"
@@ -95,7 +90,7 @@ export default function Hero() {
             sizes="(max-width: 640px) 70vw, 33vw"
             className="w-full h-auto object-cover mask-[linear-gradient(to_bottom,white_70%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,white_70%,transparent_100%)]"
           />
-        </motion.div>
+        </div>
 
         {/* Tytuł h1 – wjeżdża z góry */}
         <motion.h1
