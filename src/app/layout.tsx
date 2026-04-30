@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Manrope, Anton, Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next"
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -17,6 +18,7 @@ const anton = Anton({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rzepatrener.pl"),
   title: {
     default: "Trener Rzepa | Trening Personalny i Dieta",
     template: "%s | Trener Rzepa",
@@ -71,6 +73,7 @@ export default function RootLayout({
         className={`${manrope.variable} ${anton.variable} bg-zinc-950 antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
